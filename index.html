@@ -1,33 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <title>Document</title>
-
-    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
-<body style="background-color: aqua;">
 
-    <!-- navigation -->
-    <nav></nav>
 
-    <!-- header -->
-    <header></header>
+<body>
+    <title>Ray Hancock</title>
 
-    <!-- portfolio -->
-    <section></section>
+    <!--==========================
+Navigation Section
+============================-->
+    <nav class="navbar navbar-default" id="main-nav" role="navigation">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right nav-choices">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="active">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="active">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <!-- contact -->
-    <section></section>
 
-    <!-- footer -->
-    <footer></footer>
+    <!--==========================
+Header Section
+============================-->
+    <header class="jumbotron text-center" id="main-header">
+        <h1 class="jumbotron-heading">Ray Hancock</h1>
+        <div class="section-description">
+            <p class="lead text-muted">Wanna be web-developer</p>
+        </div>
+        <a href="./assets/Raymond Hancock Resume.pdf" target="_blank"> <button class="btn btn-primary">Resume</button></a>
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+
+    </header>
+
+    <!--==========================
+Project Section
+============================-->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 bg-info">
+                    <h2 class="section-title text-uppercase" style="font-weight: bolder;">Projects</h2>
+                    <div class="section-title-divider"></div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="https://codepen.io/raych/pen/XqBgvP" target="_blank">
+                            <img src="./assets/creature.png" style="width: 100%;">
+                            <div class="caption">
+                                <h4 class="text-center">CSS Creature project</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="https://sdevray.github.io/storeFront/" target="_blank">
+                            <img src="./assets/store.png" style="width: 100%;">
+                            <div class="caption">
+                                <h4 class="text-center">Store Front project</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="https://starwarsapi-b9fb8.firebaseapp.com/" target="_blank">
+                            <img src="./assets/api.png" style="width: 100%;">
+                            <div class="caption">
+                                <h4 class="text-center">JavaScript API project</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-info text-white">
+        <div class="container">
+            <h2 class="text-uppercase text-white" style="font-weight: bolder;">About</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <p class="lead">Use this to get started with talking about your abilities. Here you will showcase your work, share contact
+                        information, attract employers, and get practice with front end development! let's have some fun!</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="lead"> >Use this to get started with talking about your abilities. Here you will showcase your work, share contact
+                        information, attract employers, and get practice with front end development! let's have some fun!</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="lead"> >Use this to get started with talking about your abilities. Here you will showcase your work, share contact
+                        information, attract employers, and get practice with front end development! let's have some fun!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-uppercase" style="font-weight: bolder;">Contact Me</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form action="https://formspree.io/ray.hancock.c@gmail.com" method="POST">
+                        <div class="control-group">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input class="form-control" id="name" type="text" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input class="form-control" id="email" type="email" name="_replyto" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" value="Send">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-1">
+
+                </div>
+                <div class="col-lg-5">
+                    <a href="https://github.com/sdevRay" target="_blank"><img src="./assets/github.png" alt="" class="src"></a>
+                    <a href="https://www.linkedin.com/in/ray-hancock-408a3b15a/" target="_blank"><img src="./assets/linkedin.png" alt="" class="src"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-info text-center">
+        <p class="float-center">
+            <a href="#">Back to top</a>
+        </p>
+        <p>Ray Hancock
+        </p>
+    </footer>
+
+    <!--==========================
+Scripts Section
+============================-->
+
+    <!-- Bootstrap & jQuery Scripts - Note: jQuery must be first -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- jQuery 3rd Party Scripts-->
+    <script src="node_modules/wowjs/dist/wow.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/main.min.js"></script>
 </body>
+
 </html>
