@@ -5,38 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./tools/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./tools/bootstrap/dist/css/bootstrap.min.css">
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Ray Hancock</title>
 </head>
 
 
 <body>
-    <title>Ray Hancock</title>
+
 
     <!--==========================
 Navigation Section
 ============================-->
-    <nav class="navbar navbar-default" id="main-nav" role="navigation">
-        <div class="container">
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right nav-choices">
-                    <li class="active">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="active">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="active">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="active">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Ray Hancock</a>
             </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="./assets/Raymond Hancock Resume.pdf" target="_blank" class="btn navbar-btn btn-primary">Resume</a>
         </div>
     </nav>
 
@@ -49,78 +54,168 @@ Header Section
         <div class="section-description">
             <p class="lead text-muted">Wanna be web-developer</p>
         </div>
-        <a href="./assets/Raymond Hancock Resume.pdf" target="_blank"> <button class="btn btn-primary">Resume</button></a>
-
-
     </header>
 
     <!--==========================
 Project Section
 ============================-->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 bg-info">
-                    <h2 class="section-title text-uppercase" style="font-weight: bolder;">Projects</h2>
-                    <div class="section-title-divider"></div>
+
+    <div id="portfolio" class="container">
+        <br>
+        <br>
+        <h2 style="font-weight: bolder;">Portfolio</h2>
+
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a data-toggle="tab" href="#menu">Home</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#menu1">CSS Creature project</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#menu2">Store Front project</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#menu3">JavaScript API project</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+
+            <div id="menu" class="tab-pane fade in active">
+                <h3>Home</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste alias, maiores iusto quis consequatur itaque
+                    beatae quisquam corrupti, tempore possimus sequi aperiam accusantium, saepe nulla quasi laudantium? In,
+                    ullam sequi.</p>
+            </div>
+
+            <div id="menu1" class="tab-pane fade">
+                <h3>CSS Creature project</h3>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./assets/creature.png" class="img-rounded" style="width: 100%;">
+                    </div>
+
+                    <div class="col-md-8">
+
+                        
+                        <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="25.1" aria-valuemin="0" aria-valuemax="100"
+                                style="width:25.1%;">25.1% HTML</div>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="74.9" aria-valuemin="0" aria-valuemax="100" style="width:74.9%;">74.9% CSS</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                                style="width:0%;">0% JavaScript</div>
+                        </div>
+
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus velit quam sequi ipsa quidem molestiae!
+                            Perspiciatis minima totam velit unde? Cum quidem nihil ipsam vero odio dignissimos qui et laborum?</p>
+
+                        <a href="https://codepen.io/raych/pen/XqBgvP" target="_blank" class="btn btn-primary">Launch</a>
+                        <a href="https://github.com/sdevRay/cssCreature" target="_blank">
+                            <img src="./assets/github.png" alt="" class="src">
+                        </a>
+
+                    </div>
                 </div>
             </div>
-            <br>
 
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <a href="https://codepen.io/raych/pen/XqBgvP" target="_blank">
-                            <img src="./assets/creature.png" style="width: 100%;">
-                            <div class="caption">
-                                <h4 class="text-center">CSS Creature project</h4>
-                            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>Store Front project</h3>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./assets/store.png" style="width: 100%;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="73.6" aria-valuemin="0" aria-valuemax="100"
+                                style="width:73.6%;">73.6% HTML</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="26.4" aria-valuemin="0" aria-valuemax="100" style="width:26.4%;">26.4% CSS</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                                style="width:0%;">0% JavaScript</div>
+                        </div>
+
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus velit quam sequi ipsa quidem molestiae!
+                            Perspiciatis minima totam velit unde? Cum quidem nihil ipsam vero odio dignissimos qui et laborum?</p>
+
+                        <a href="https://sdevray.github.io/storeFront/" target="_blank" class="btn btn-primary">Launch</a>
+                        <a href="https://github.com/sdevRay/storeFront" target="_blank">
+                            <img src="./assets/github.png" alt="" class="src">
                         </a>
+
                     </div>
                 </div>
+            </div>
+            
+            <div id="menu3" class="tab-pane fade">
+                <h3>JavaScript API project</h3>
 
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <a href="https://sdevray.github.io/storeFront/" target="_blank">
-                            <img src="./assets/store.png" style="width: 100%;">
-                            <div class="caption">
-                                <h4 class="text-center">Store Front project</h4>
-                            </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./assets/api.png" style="width: 100%;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="36.9" aria-valuemin="0" aria-valuemax="100"
+                                style="width:36.9%;">36.9% HTML</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="5.3" aria-valuemin="0" aria-valuemax="100" style="width:5.3%;">5.3% CSS</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="57.8" aria-valuemin="0" aria-valuemax="100"
+                                style="width:57.8%;">57.8% JavaScript</div>
+                        </div>
+
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus velit quam sequi ipsa quidem molestiae!
+                            Perspiciatis minima totam velit unde? Cum quidem nihil ipsam vero odio dignissimos qui et laborum?</p>
+
+                        <a href="https://starwarsapi-b9fb8.firebaseapp.com/" target="_blank" class="btn btn-primary">Launch</a>
+                        <a href="https://github.com/sdevRay/starwarsAPI" target="_blank">
+                            <img src="./assets/github.png" alt="" class="src">
                         </a>
+
                     </div>
                 </div>
-
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <a href="https://starwarsapi-b9fb8.firebaseapp.com/" target="_blank">
-                            <img src="./assets/api.png" style="width: 100%;">
-                            <div class="caption">
-                                <h4 class="text-center">JavaScript API project</h4>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- About -->
-    <section id="about" class="bg-info text-white">
+    <section id="about">
+            <br>
+            <br>
         <div class="container">
-            <h2 class="text-uppercase text-white" style="font-weight: bolder;">About</h2>
-            <div class="row">
-                <div class="col-lg-4">
-                    <p class="lead">Use this to get started with talking about your abilities. Here you will showcase your work, share contact
-                        information, attract employers, and get practice with front end development! let's have some fun!</p>
-                </div>
-                <div class="col-lg-4">
-                    <p class="lead"> >Use this to get started with talking about your abilities. Here you will showcase your work, share contact
-                        information, attract employers, and get practice with front end development! let's have some fun!</p>
-                </div>
-                <div class="col-lg-4">
-                    <p class="lead"> >Use this to get started with talking about your abilities. Here you will showcase your work, share contact
-                        information, attract employers, and get practice with front end development! let's have some fun!</p>
+            <h2 class="page-header" style="font-weight: bolder;">About</h2>
+        </div>
+        <div class="bg-info text-muted" style="padding-top: 15px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p class="lead">Use this to get started with talking about your abilities. Here you will showcase your work, share
+                            contact information, attract employers, and get practice with front end development! let's have
+                            some fun!</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="lead"> >Use this to get started with talking about your abilities. Here you will showcase your work, share
+                            contact information, attract employers, and get practice with front end development! let's have
+                            some fun!</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="lead"> >Use this to get started with talking about your abilities. Here you will showcase your work, share
+                            contact information, attract employers, and get practice with front end development! let's have
+                            some fun!</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -129,7 +224,7 @@ Project Section
     <!-- Contact -->
     <section id="contact">
         <div class="container">
-            <h2 class="text-uppercase" style="font-weight: bolder;">Contact Me</h2>
+            <h2 class="page-header" style="font-weight: bolder;">Contact Me</h2>
             <div class="row">
                 <div class="col-lg-6">
                     <form action="https://formspree.io/ray.hancock.c@gmail.com" method="POST">
@@ -152,7 +247,7 @@ Project Section
                             </div>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary" value="Send">Send</button>
+                            <button type="submit" class="btn btn-primary" value="send">Send</button>
                         </div>
                     </form>
                 </div>
@@ -160,8 +255,12 @@ Project Section
 
                 </div>
                 <div class="col-lg-5">
-                    <a href="https://github.com/sdevRay" target="_blank"><img src="./assets/github.png" alt="" class="src"></a>
-                    <a href="https://www.linkedin.com/in/ray-hancock-408a3b15a/" target="_blank"><img src="./assets/linkedin.png" alt="" class="src"></a>
+                    <a href="https://github.com/sdevRay" target="_blank">
+                        <img src="./assets/github.png" alt="" class="src">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ray-hancock-408a3b15a/" target="_blank">
+                        <img src="./assets/linkedin.png" alt="" class="src">
+                    </a>
                 </div>
             </div>
         </div>
@@ -181,8 +280,8 @@ Scripts Section
 ============================-->
 
     <!-- Bootstrap & jQuery Scripts - Note: jQuery must be first -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./tools/jquery/dist/jquery.min.js"></script>
+    <script src="./tools/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- jQuery 3rd Party Scripts-->
     <script src="node_modules/wowjs/dist/wow.min.js"></script>
