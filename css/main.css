@@ -1,4 +1,10 @@
 /* Variables used throughout will go here. */
 /* EFA Color pallete */
+footer {
+  padding: 15px; }
+
+#contact {
+  padding: 0px 0px 25px 0px; }
+
 header {
   margin-top: 45px; }
