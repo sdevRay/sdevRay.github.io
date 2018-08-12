@@ -8,3 +8,7 @@ footer {
 
 header {
   margin-top: 45px; }
+
+  .img-rounded {
+    border: solid grey 1px;
+  }
