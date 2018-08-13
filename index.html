@@ -63,11 +63,35 @@ Header Section
         <br>
         <div class="container">
             <h2 class="page-header" style="font-weight: bolder;">Skills</h2>
-            <div class="well" style="text-align: center; font-size: 25px; word-spacing: 20px; font-weight: bold;">
-                <p>JavaScript TypeScript Angular React.js </p>
-                <p>Node.js Java LibGDX Express </p>
-                <p>Sequelize PostgreSQL Postman Git </p>
-                <p>Agile Heroku PGAdmin4</p>
+            <div class="well" style="text-align: center; font-size: 25px; font-weight: bold;">
+                <div style="overflow-x:auto;">
+                    <table style="display: inline-block; text-align: left; border-collapse: separate; border-spacing: 20px;">
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>TypeScript</td>
+                            <td>Angular</td>
+                            <td>React.js</td>
+                        </tr>
+                        <tr>
+                            <td>Node.js</td>
+                            <td>Java</td>
+                            <td>LibGDX</td>
+                            <td>Express</td>
+                        </tr>
+                        <tr>
+                            <td>Sequelize</td>
+                            <td>PostgreSQL</td>
+                            <td>Postman</td>
+                            <td>Git</td>
+                        </tr>
+                        <tr>
+                            <td>Agile</td>
+                            <td>Heroku</td>
+                            <td>PGAdmin4</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
@@ -84,14 +108,59 @@ Project Section
         </div>
 
         <div class="row">
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="./assets/Under_Construction.gif" target="_blank">
+                        <img src="./assets/Under_Construction.gif" class="img-rounded" style="width: 100%;">
+                    </a>
+                    <div class="caption">
+                        <p>Welp. Randomly finds a restaurant based on given price point and location.
+                            <span style="font-weight: bold">Angular6</span> frontend and
+                            <span style="font-weight: bold">Node.js</span> backend utilizing the 3rd party Yelp API. </p>
+                        <div style="display: flex;">
+                            <a href="https://rch-yelpapi-client.herokuapp.com/" target="_blank" class="btn btn-primary" style="margin-right: 1em;">Launch</a>
+                            <a href="https://github.com/sdevRay/yelpAPI-client" target="_blank">
+                                <img src="./assets/github.png" alt="" class="src" style="width: 25px; height: 25px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="./assets/edr.png" target="_blank">
+                        <img src="./assets/edr.png" class="img-rounded" style="width: 100%;">
+                    </a>
+                    <div class="caption">
+                        <p>Event Driven Results. Calculates training goals given fitness stats and events.
+                            <span style="font-weight: bold">Angular6</span> frontend and
+                            <span style="font-weight: bold">Node.js</span> backend. Using
+                            <span style="font-weight: bold">express, sequelize and postgres.</span>
+                        </p>
+                        <div style="display: flex;">
+                            <a href="https://hundyp-edr-client.herokuapp.com/" target="_blank" class="btn btn-primary" style="margin-right: 1em;">Launch</a>
+                            <a href="https://github.com/sdevRay/EDR-Client" target="_blank">
+                                <img src="./assets/github.png" alt="" class="src" style="width: 25px; height: 25px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="col-md-4">
                 <div class="thumbnail">
                     <a href="./assets/expense.png" target="_blank">
                         <img src="./assets/expense.png" class="img-rounded" style="width: 100%;">
                     </a>
                     <div class="caption">
-                        <p>Expense statement builder. Input monthly expense data for indexing. React.js frontend and Node.js
-                            backend. Using express, sequelize and postgres.
+                        <p>Expense statement builder. Input monthly expense data for indexing.
+                            <span style="font-weight: bold">React.js</span> frontend and
+                            <span style="font-weight: bold">Node.js</span>
+                            backend. Using
+                            <span style="font-weight: bold">express, sequelize and postgres.</span>
                         </p>
                         <div style="display: flex;">
                             <a href="https://rch-pernclient.herokuapp.com/" target="_blank" class="btn btn-primary" style="margin-right: 1em;">Launch</a>
@@ -103,83 +172,21 @@ Project Section
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="./assets/edr.png" target="_blank">
-                        <img src="./assets/edr.png" class="img-rounded" style="width: 100%;">
-                    </a>
-                    <div class="caption">
-                        <p>Event Driven Results. Calculates training goals given fitness stats and events. Angular6 frontend
-                            and Node.js backend. Using express, sequelize and postgres.</p>
-                        <div style="display: flex;">
-                            <a href="https://hundyp-edr-client.herokuapp.com/" target="_blank" class="btn btn-primary" style="margin-right: 1em;">Launch</a>
-                            <a href="https://github.com/sdevRay/EDR-Client" target="_blank">
-                                <img src="./assets/github.png" alt="" class="src" style="width: 25px; height: 25px;">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <img src="./assets/store.png" class="img-rounded" style="width: 100%;">
-                    <div class="caption">
-                        <p>Welp. Randomly finds a restaurant based on given price point and location. Angular6 frontend and
-                            Node.js backend utilizing the 3rd party Yelp API. </p>
-                        <div style="display: flex;">
-                            <a href="https://rch-yelpapi-client.herokuapp.com/" target="_blank" class="btn btn-primary" style="margin-right: 1em;">Launch</a>
-                            <a href="https://github.com/sdevRay/yelpAPI-client" target="_blank">
-                                <img src="./assets/github.png" alt="" class="src" style="width: 25px; height: 25px;">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
 
+
         <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="./assets/creature.png" target="_blank">
-                        <img src="./assets/creature.png" class="img-rounded" style="width: 100%;">
-                    </a>
-                    <div class="caption">
-                        <p>HTML and CSS Creature demonstrating a grasp of various CSS features to color, shape, position, and
-                            layer divs.</p>
-                        <div style="display: flex;">
-                            <a href="https://codepen.io/raych/pen/XqBgvP" target="_blank" class="btn btn-primary" style="margin-right: 1em;">Launch</a>
-                            <a href="https://github.com/sdevRay/cssCreature" target="_blank">
-                                <img src="./assets/github.png" alt="" class="src" style="width: 25px; height: 25px;">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="./assets/store.png" target="_blank">
-                        <img src="./assets/store.png" class="img-rounded" style="width: 100%;">
-                    </a>
-                    <div class="caption">
-                        <p>From a wireframe of a storefront, strict HTML & CSS was used to build this storefront application.</p>
-                        <div style="display: flex;">
-                            <a href="https://sdevray.github.io/storeFront/" target="_blank" class="btn btn-primary" style="margin-right: 1em;">Launch</a>
-                            <a href="https://github.com/sdevRay/storeFront" target="_blank">
-                                <img src="./assets/github.png" alt="" class="src" style="width: 25px; height: 25px;">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <div class="col-md-4">
                 <div class="thumbnail">
                     <a href="./assets/api.png" target="_blank">
                         <img src="./assets/api.png" class="img-rounded" style="width: 100%;">
                     </a>
                     <div class="caption">
-                        <p>DOM manupulation, asynchronous programming, and API's. Built using Vanilla JS and the Star Wars API
-                            - https://swapi.co/.</p>
+                        <p>DOM manupulation, asynchronous programming, and API's. Built using
+                            <span style="font-weight: bold">Vanilla JS</span> and the Star Wars API - https://swapi.co/.
+                        </p>
                         <div style="display: flex;">
                             <a href="https://starwarsapi-b9fb8.firebaseapp.com/" target="_blank" class="btn btn-primary" style="margin-right: 1em;">Launch</a>
                             <a href="https://github.com/sdevRay/starwarsAPI" target="_blank">
@@ -189,9 +196,46 @@ Project Section
                     </div>
                 </div>
             </div>
+
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="./assets/store.png" target="_blank">
+                        <img src="./assets/store.png" class="img-rounded" style="width: 100%;">
+                    </a>
+                    <div class="caption">
+                        <p>From a wireframe of a storefront, strict
+                            <span style="font-weight: bold">HTML & CSS</span> was used to build this storefront application.</p>
+                        <div style="display: flex;">
+                            <a href="https://sdevray.github.io/storeFront/" target="_blank" class="btn btn-primary" style="margin-right: 1em;">Launch</a>
+                            <a href="https://github.com/sdevRay/storeFront" target="_blank">
+                                <img src="./assets/github.png" alt="" class="src" style="width: 25px; height: 25px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="./assets/creature.png" target="_blank">
+                        <img src="./assets/creature.png" class="img-rounded" style="width: 100%;">
+                    </a>
+                    <div class="caption">
+                        <p>HTML and CSS Creature demonstrating a grasp of various
+                            <span style="font-weight: bold">CSS</span> features to color, shape, position, and layer divs.
+                        </p>
+                        <div style="display: flex;">
+                            <a href="https://codepen.io/raych/pen/XqBgvP" target="_blank" class="btn btn-primary" style="margin-right: 1em;">Launch</a>
+                            <a href="https://github.com/sdevRay/cssCreature" target="_blank">
+                                <img src="./assets/github.png" alt="" class="src" style="width: 25px; height: 25px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-
-
     </div>
 
     <!-- Contact -->
