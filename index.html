@@ -3,12 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./tools/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="./tools/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Ray Hancock</title>
 </head>
@@ -21,27 +20,26 @@
 Navigation Section
 ============================-->
 
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Ray Hancock</a>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a href="#" class="navbar-brand">Ray Hancock</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li>
-                    <a href="#">Home</a>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
                 </li>
-                <li>
-                    <a href="#portfolio">Portfolio</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
-                <li>
-                    <a href="#skills">Skills</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li style="border: 1px solid black; border-radius: 5px;">
-                    <a href="./assets/Raymond Hancock Resume.pdf" target="_blank">Resume</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./assets/Raymond Hancock Resume.pdf" target="_blank">Resume</a>
                 </li>
             </ul>
         </div>
@@ -61,36 +59,35 @@ Header Section
     <!-- About -->
     <section id="skills">
         <br>
+        <br>
+        <br>
         <div class="container">
             <h2 class="page-header" style="font-weight: bolder;">Skills</h2>
-            <div class="well" style="text-align: center; font-size: 25px; font-weight: bold;">
-                <div style="overflow-x:auto;">
-                    <table style="display: inline-block; text-align: left; border-collapse: separate; border-spacing: 20px;">
-                        <tr>
-                            <td>JavaScript</td>
-                            <td>TypeScript</td>
-                            <td>Angular</td>
-                            <td>React.js</td>
-                        </tr>
-                        <tr>
-                            <td>Node.js</td>
-                            <td>Java</td>
-                            <td>LibGDX</td>
-                            <td>Express</td>
-                        </tr>
-                        <tr>
-                            <td>Sequelize</td>
-                            <td>PostgreSQL</td>
-                            <td>Postman</td>
-                            <td>Git</td>
-                        </tr>
-                        <tr>
-                            <td>Agile</td>
-                            <td>Heroku</td>
-                            <td>PGAdmin4</td>
-                            <td></td>
-                        </tr>
-                    </table>
+            <hr>
+            <div style="font-size: 1em; font-weight: bold;">
+                <div class="row">
+                    <div class="col-3">JavaScript</div>
+                    <div class="col-3">TypeScript</div>
+                    <div class="col-3">Angular</div>
+                    <div class="col-3">React.js</div>
+                </div>
+                <div class="row">
+                    <div class="col-3">Node.js</div>
+                    <div class="col-3">Java</div>
+                    <div class="col-3">LibGDX</div>
+                    <div class="col-3">Express</div>
+                </div>
+                <div class="row">
+                    <div class="col-3">Sequelize</div>
+                    <div class="col-3">PostgreSQL</div>
+                    <div class="col-3">PGAdmin4</div>
+                    <div class="col-3">Postman</div>
+                </div>
+                <div class="row">
+                    <div class="col-3">Git</div>
+                    <div class="col-3">Heroku</div>
+                    <div class="col-3">Agile</div>
+                    <div class="col-3"></div>
                 </div>
             </div>
         </div>
@@ -103,23 +100,23 @@ Project Section
 
     <div class="container" id="portfolio">
         <br>
-        <div class="container">
-            <h2 class="page-header" style="font-weight: bolder;">Portfolio</h2>
-        </div>
-
+        <br>
+        <br>
+        <h2 class="page-header" style="font-weight: bolder;">Portfolio</h2>
+        <hr>
         <div class="row">
-
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <a href="./assets/Under_Construction.gif" target="_blank">
-                        <img src="./assets/Under_Construction.gif" class="img-rounded" style="width: 100%;">
+                    <a href="./assets/welp.png" target="_blank">
+                        <img src="./assets/welp.png" class="img-rounded" style="width: 100%;">
                     </a>
                     <div class="caption">
-                        <p>Welp. Randomly finds a restaurant based on given price point and location.
-                            <span style="font-weight: bold">Angular6</span> frontend and
-                            <span style="font-weight: bold">Node.js</span> backend utilizing the 3rd party Yelp API. </p>
+                        <p>Welp! Randomly finds a restaurant based on given price point and location.
+                            <span style="font-weight: bold">Angular 6</span> front-end and
+                            <span style="font-weight: bold">Node.js</span> back-end utilizing the 3rd party <a href="https://www.yelp.com/developers/documentation/v3/"
+                                target="_blank">Yelp API</a>. </p>
                         <div style="display: flex;">
-                            <a href="#" target="_blank" class="btn btn-primary" style="margin-right: 1em;">Launch</a>
+                            <a href="https://rch-yelpapi-client.herokuapp.com/" target="_blank" class="btn btn-primary" style="margin-right: 1em;">Launch</a>
                             <a href="https://github.com/sdevRay/yelpAPI-client" target="_blank">
                                 <img src="./assets/github.png" alt="" class="src" style="width: 25px; height: 25px;">
                             </a>
@@ -128,16 +125,16 @@ Project Section
                 </div>
             </div>
 
-
             <div class="col-md-4">
                 <div class="thumbnail">
                     <a href="./assets/edr.png" target="_blank">
                         <img src="./assets/edr.png" class="img-rounded" style="width: 100%;">
                     </a>
                     <div class="caption">
-                        <p>Event Driven Results. Calculates training goals given fitness stats and events. Built with two other friends for a group project.
-                            <span style="font-weight: bold">Angular6</span> frontend and
-                            <span style="font-weight: bold">Node.js</span> backend. Using
+                        <p>Event Driven Results. Calculates training goals given fitness stats and events. Built with two
+                            other friends for a group project.
+                            <span style="font-weight: bold">Angular 6</span> front-end and
+                            <span style="font-weight: bold">Node.js</span> back-end. Using
                             <span style="font-weight: bold">express, sequelize and postgres.</span>
                         </p>
                         <div style="display: flex;">
@@ -157,9 +154,9 @@ Project Section
                     </a>
                     <div class="caption">
                         <p>Expense statement builder. Input monthly expense data for indexing.
-                            <span style="font-weight: bold">React.js</span> frontend and
+                            <span style="font-weight: bold">React.js</span> front-end and
                             <span style="font-weight: bold">Node.js</span>
-                            backend. Using
+                            back-end. Using
                             <span style="font-weight: bold">express, sequelize and postgres.</span>
                         </p>
                         <div style="display: flex;">
@@ -171,13 +168,9 @@ Project Section
                     </div>
                 </div>
             </div>
-
         </div>
 
-
-
         <div class="row">
-
             <div class="col-md-4">
                 <div class="thumbnail">
                     <a href="./assets/api.png" target="_blank">
@@ -185,7 +178,8 @@ Project Section
                     </a>
                     <div class="caption">
                         <p>DOM manupulation, asynchronous programming, and API's. Built using
-                            <span style="font-weight: bold">Vanilla JS</span> and the Star Wars API - https://swapi.co/.
+                            <span style="font-weight: bold">Vanilla JS</span> and the <a href="https://swapi.co/" target="_blank">Star
+                                Wars API</a>.
                         </p>
                         <div style="display: flex;">
                             <a href="https://starwarsapi-b9fb8.firebaseapp.com/" target="_blank" class="btn btn-primary" style="margin-right: 1em;">Launch</a>
@@ -196,7 +190,6 @@ Project Section
                     </div>
                 </div>
             </div>
-
 
             <div class="col-md-4">
                 <div class="thumbnail">
@@ -234,7 +227,6 @@ Project Section
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -243,6 +235,7 @@ Project Section
         <div class="container">
             <br>
             <h2 class="page-header" style="font-weight: bolder;">Contact Me</h2>
+            <hr>
             <div class="row">
                 <div class="col-lg-6">
                     <form method="POST" action="https://formspree.io/ray.hancock.c@gmail.com">
@@ -275,26 +268,23 @@ Project Section
     </section>
 
     <!-- FOOTER -->
-    <footer class="container-fluid bg-info text-center">
-        <p class="float-center">
-            <a href="#">Back to top</a>
-        </p>
-
+    <footer>
+        <nav class="navbar fixed-bottom navbar-light bg-light">
+            <a class="navbar-brand" href="#">Back to top</a>
+        </nav>
     </footer>
 
     <!--==========================
 Scripts Section
 ============================-->
 
-    <!-- Bootstrap & jQuery Scripts - Note: jQuery must be first -->
-    <script src="./tools/jquery/dist/jquery.min.js"></script>
-    <script src="./tools/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
-    <!-- jQuery 3rd Party Scripts-->
-    <script src="node_modules/wowjs/dist/wow.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/main.min.js"></script>
 </body>
 
 </html>
