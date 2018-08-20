@@ -5,12 +5,15 @@ footer {
   padding: 0px 0px 25px 0px; }
 
 header {
-  margin-top: 45px; }
+  margin-top: 45px; 
+}
 
-  .img-rounded {
-    border: solid grey 1px;
-  }
+.img-rounded {
+  border: solid grey 1px;
+}
 
-  .col-md-4 {
-    margin-bottom: 1em;
-  }
+.caption {
+  margin-bottom: 2em;
+}
+
+  
